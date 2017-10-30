@@ -2,7 +2,7 @@
 
 
 
-![1](https://github.com/cxy1221/git-workflow/1.png)
+![1](https://github.com/cxy1221/git-workflow/blob/master/1.png)
 
 A Git Workflow is a recipe or recommendation for how to use Git to accomplish work in a consistent and productive manner. Git workflows encourage users to leverage Git effectively and consistently. Git offers a lot of flexibility in how users manage changes. Given Git's focus on flexibility, there is no standardized process on how to interact with Git. When working with a team on a Git managed project, it’s important to make sure the team is all in agreement on how the flow of changes will be applied. To ensure the team is on the same page, an agreed upon Git workflow should be developed or selected. There are several publicized Git workflows that may be a good fit for your team. Here, we’ll be discussing some of these workflow options.
 
@@ -23,7 +23,7 @@ Does this workflow impose any new unnecessary cognitive overhead to the team?
 
 # Centralized Workflow
 
-![2](https://github.com/cxy1221/git-workflow/2.png)
+![2](https://github.com/cxy1221/git-workflow/blob/master/2.png)
 
 
 The Centralized Workflow is a great Git workflow for teams transitioning from SVN. Like Subversion, the Centralized Workflow uses a central repository to serve as the single point-of-entry for all changes to the project. Instead of trunk, the default development branch is called master and all changes are committed into this branch. This workflow doesn’t require any other branches besides master.
@@ -42,7 +42,7 @@ To publish changes to the official project, developers "push" their local master
 
 ## Initialize the central repository
 
-![3](https://github.com/cxy1221/git-workflow/3.png)
+![3](https://github.com/cxy1221/git-workflow/blob/master/3.png)
 
 ## Hosted central repositories
 Central repositories are often created through 3rd party Git hosting services like Bitbucket Cloud or Bitbucket Server. The process of initializing a bare repository discussed above is handled for you by the hosting service. The hosting service will then provide an address for the central repository to access from your local repository.
@@ -75,7 +75,7 @@ This command will push the new committed changes to the central repository. When
 
 The central repository represents the official project, so its commit history should be treated as sacred and immutable. If a developer’s local commits diverge from the central repository, Git will refuse to push their changes because this would overwrite official commits.
 
-![4](https://github.com/cxy1221/git-workflow/4.png)
+![4](https://github.com/cxy1221/git-workflow/blob/master/4.png)
 
 Before the developer can publish their feature, they need to fetch the updated central commits and rebase their changes on top of them. This is like saying, “I want to add my changes to what everyone else has already done.” The result is a perfectly linear history, just like in traditional SVN workflows.
 
